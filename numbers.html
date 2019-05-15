@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var num = prompt("Type an integer in the field below.");
+while (num % 1 !== 0) {
+  num = prompt("ERROR: You entered a float. Please enter an integer.");
+}
+num = Math.abs(parseInt(num));
+console.log(num + " contains...");
+console.log(parseInt(num/1000) + " thousands");
+console.log(parseInt(num%1000/100) + " hundreds");
+console.log(parseInt(num%100/10) + " tens");
+console.log(num%10 + " ones");
+</script>
+</body>
+</html>
